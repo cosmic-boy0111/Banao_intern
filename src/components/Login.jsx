@@ -69,7 +69,7 @@ export default function AlertDialog() {
                 </div>
                 <div style={{
                     backgroundColor:'white',
-                    borderRadius:'8px 8px 0px 0px'
+                    borderRadius:'8px 8px 8px 8px'
                 }}>
 
                     <div className='log_head'>
