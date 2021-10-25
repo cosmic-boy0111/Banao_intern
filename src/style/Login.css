@@ -1,0 +1,234 @@
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+    background-color: transparent !important; 
+    box-shadow: none !important;
+    margin: 0 !important;
+    max-width: none !important;
+    width: 736px;
+    display: flex !important;
+    border-radius: 8px !important;
+    flex-direction: column !important;
+    overflow-x: visible;
+}
+
+.login_container{
+    background-color: white !important;
+    /* width: 90%; */
+    /* padding: 1rem; */
+    border-radius: 8px;
+    box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+}
+
+.css-ypiqx9-MuiDialogContent-root{
+    padding: 0 !important;
+}
+
+.log_head{
+    height: 50px;
+    background: #EFFFF4;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.log_head_text{
+    font-size: 14px;
+    color: #008A45;
+}
+
+.log_me{
+    /* width: 100%; */
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 4rem; */
+}
+
+.log_me_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log_me_head_text{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+.log_me_head_text1{
+    font-size: 13px;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+
+.log_me_body{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: .5rem;
+}
+
+.log_me_div1{
+    width: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.input_div{
+    height: 46px;
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    box-sizing: border-box;
+    border-radius: 2px 2px 0px 0px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 .5rem;
+
+}
+
+.input_div input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.log_me_div2{
+    width: 50%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create_btn{
+    height: 40px;
+    background: #2F6CE5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.another_login{
+    height: 38px;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.privacy{
+    font-size: 11px;
+    letter-spacing: -0.008em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.forget{
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: -0.008em;
+    color: #000000;
+}
+
+
+/* ///////////////// login 2 ////////////////// */
+
+
+@media (max-width: 1000px){
+    
+    .css-hz1bth-MuiDialog-container{
+        height: 462px !important;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    .css-m9glnp-MuiPaper-root-MuiDialog-paper{
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25) !important;
+        border-radius: 8px 8px 0px 0px !important;
+    
+    }
+
+    .log_me{
+        padding: 0 1.5rem;
+    }
+
+    .log_me_div1{
+        width: 100%;
+    }
+
+    
+    .privacy2 {
+        margin: 0 40px;
+        margin-top: 1rem;
+        /* border: 1px solid red; */
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: -0.008em;
+        color: #212529;
+    }
+
+    .extra_head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .5rem  0;
+    }
+
+    .extra_head1{
+        font-weight: bold;
+        font-size: 18px;
+        
+        color: #000000;
+    }
+
+    .res_close{
+        background: #212529;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .res_forgot{
+        margin: 1rem 3rem;
+        font-weight: 500;
+        font-size: 11px;
+        text-align: center;
+        letter-spacing: -0.008em;
+        color: #212529;
+
+
+    }
+
+    .go{
+        font-size: 13px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #495057;
+    }
+    
+}

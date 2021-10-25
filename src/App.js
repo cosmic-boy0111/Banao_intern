@@ -1,24 +1,39 @@
 import logo from './logo.svg';
+import React,{createContext,useState} from 'react';
 import './App.css';
+import SearchIcon from '@mui/icons-material/Search';
+import Navbar from './components/Navbar';
+import Body from './components/Body';
+import AlertDialog from './components/Login';
+import FullScreenDialog from './components/Login2';
 
+export const userContext = createContext()
 function App() {
+
+  const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
+
+  const [user, setUser] = useState(false)
+  const [name, setName] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <userContext.Provider value={{
+      open,
+      setOpen,
+      user,
+      setUser,
+      name,
+      setName,
+      open2,
+      setOpen2
+    }}>
+      <FullScreenDialog />
+      <AlertDialog />
+      <Navbar />
+      <Body />
+    </userContext.Provider>
+    </>
   );
 }
 
