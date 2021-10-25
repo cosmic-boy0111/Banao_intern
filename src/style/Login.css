@@ -25,7 +25,7 @@
 .log_head{
     height: 50px;
     background: #EFFFF4;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 8px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,4 +231,15 @@
         color: #495057;
     }
     
+}
+
+.css-1ty026z{
+    padding: 0 !important;
+}
+
+.css-uhb5lp{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    max-width: none !important;
 }
