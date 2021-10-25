@@ -108,10 +108,10 @@ function Body() {
                                 <div className='pro'>
                                     <img src={img2} alt="" />
                                     <h4 className='name'>
-                                    <span> Sarthak Karma </span>
-                                    <div className='views2'>
-                                        <RemoveRedEyeIcon fontSize='small'/> 1.4k views
-                                    </div>
+                                        <span> Sarthak Karma </span>
+                                        <div className='views2'>
+                                            <RemoveRedEyeIcon fontSize='small'/> 1.4k views
+                                        </div>
                                     </h4>
                                 </div>
                                 <div className='option'>
@@ -162,7 +162,12 @@ function Body() {
                             <div className='foot'>
                                 <div className='pro'>
                                     <img src={img4} alt="" />
-                                    <h4 className='name'>Sarah West</h4>
+                                    <h4 className='name'>
+                                        <span> Sarah West </span>
+                                        <div className='views2'>
+                                            <RemoveRedEyeIcon fontSize='small'/> 1.4k views
+                                        </div>
+                                    </h4>
                                 </div>
                                 <div className='option'>
                                     <div className='views'>
@@ -224,7 +229,12 @@ function Body() {
                             <div className='foot'>
                                 <div className='pro'>
                                     <img src={img6} alt="" />
-                                    <h4 className='name'>Ronal Jones</h4>
+                                    <h4 className='name'>
+                                        <span>Ronal Jones </span>
+                                        <div className='views2'>
+                                            <RemoveRedEyeIcon fontSize='small'/> 1.4k views
+                                        </div>
+                                    </h4>
                                 </div>
                                 <div className='option'>
                                     <div className='views'>
@@ -285,7 +295,12 @@ function Body() {
                             <div className='foot'>
                                 <div className='pro'>
                                     <img src={img7} alt="" />
-                                    <h4 className='name'>Joseph Gray</h4>
+                                    <h4 className='name'>
+                                        <span>Joseph Gray</span>
+                                        <div className='views2'>
+                                            <RemoveRedEyeIcon fontSize='small'/> 1.4k views
+                                        </div>
+                                    </h4>
                                 </div>
                                 <div className='option'>
                                     <div className='views'>
