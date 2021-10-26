@@ -34,7 +34,7 @@ function Body() {
 
     const [change, setChange] = useState(false)
 
-    const { open2,setOpen2 } = useContext(userContext)
+    const { open2,setOpen2,user,setUser } = useContext(userContext)
 
     const set = (text) =>{
         if(text===''){
@@ -44,9 +44,14 @@ function Body() {
         setChange(true)
     }
 
+    const leave = () =>{
+        setUser(false);
+        setOpen2(true)
+    }
+
     return (
         <div>
-            <div className='float_btn' onClick={()=>setOpen2(true)}>
+            <div className='float_btn' >
                 <EditTwoToneIcon />
             </div>
             <div>
@@ -54,9 +59,15 @@ function Body() {
                     <img src={ window.innerWidth <= 680 ? res_img : img} alt="" />
                     <div className='btn_div_res'>
                         <ArrowBackIcon />
-                        <div className='join_grp'>
+                        {
+                            user?<div className='join_grp' onClick={leave}>
+                            Leave Group
+                        </div>:<div className='join_grp' onClick={()=>setOpen2(true)}>
                             Join Group
                         </div>
+                        }
+                        
+
                     </div>
                 </div>
                 <div className='frame'>

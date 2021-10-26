@@ -23,12 +23,24 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function FullScreenDialog() {
 
-    const { open2,setOpen2 } = useContext(userContext);
+    const { open2,setOpen2,setUser } = useContext(userContext);
     const [change, setChange] = useState(false)
     const [pass, setPass] = useState(true)
 
     const [first, setFirst] = useState('')
     const [last, setLast] = useState('')
+
+
+    const set = () =>{
+      if(first==='' && last===''){
+        return;
+      }
+
+      setUser(true)
+      setOpen2(false)
+      setChange(false)
+
+    }
 
    
     const down = () =>{
@@ -141,7 +153,7 @@ export default function FullScreenDialog() {
                                   justifyContent:'space-between',
                                   alignItems:'center'
                                 }}>
-                                  <div className='create_btn' onClick={down}  style={{
+                                  <div className='create_btn' onClick={set}  style={{
                                     width:'50%'
                                   }}
                                   >
