@@ -56,7 +56,7 @@ function Body() {
             </div>
             <div>
                 <div className='head_img'>
-                    <img src={ window.innerWidth <= 1000 ? res_img : img} alt="" />
+                    <img src={ window.innerWidth <= 680 ? res_img : img} alt="" />
                     <div className='btn_div_res'>
                         <ArrowBackIcon />
                         {
